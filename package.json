@@ -1,0 +1,16 @@
+{
+  "name": "@cable_ready/devtools",
+  "version": "0.0.1",
+  "description": "A DevTools Suite for CableReady",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julian Rubisch (julian@julianrubisch.at)",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.17.16",
+    "eslint": "^8.38.0",
+    "prettier-standard": "^16.4.1"
+  }
+}
