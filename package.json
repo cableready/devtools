@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Julian Rubisch (julian@julianrubisch.at)",
+  "repository": "https://github.com/cableready/devtools",
   "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.17.16",
