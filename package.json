@@ -9,6 +9,9 @@
   "author": "Julian Rubisch (julian@julianrubisch.at)",
   "repository": "https://github.com/cableready/devtools",
   "license": "MIT",
+  "dependencies": {
+    "@turbo-boost/devtools": "^0.0.1"
+  },
   "devDependencies": {
     "esbuild": "^0.17.16",
     "eslint": "^8.38.0",
