@@ -2,13 +2,21 @@
   "name": "@cable_ready/devtools",
   "version": "0.0.1",
   "description": "A DevTools Suite for CableReady",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "dist/@cable_ready/devtools.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "rails",
+    "cable_ready",
+    "stimulus_reflex"
+  ],
   "author": "Julian Rubisch (julian@julianrubisch.at)",
   "repository": "https://github.com/cableready/devtools",
   "license": "MIT",
+  "peerDependencies": {
+    "cable_ready": "^5.0.0"
+  },
   "dependencies": {
     "@turbo-boost/devtools": "^0.0.1"
   },
@@ -16,5 +24,10 @@
     "esbuild": "^0.17.16",
     "eslint": "^8.38.0",
     "prettier-standard": "^16.4.1"
+  },
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --minify --sourcemap --format=esm --target=es2020,chrome79,edge44,firefox71,opera65,safari13 --analyze --outfile=dist/@cable_ready/devtools.js",
+    "build:watch": "yarn build -- --watch",
+    "standardize": "yarn run prettier-standard src/**/*.js"
   }
 }
